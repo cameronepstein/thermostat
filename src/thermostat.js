@@ -21,10 +21,6 @@ Thermostat.prototype.increaseTemperature = function() {
   this.temperature += 1;
 }
 
-Thermostat.prototype.decreaseTemperature = function() {
-  this.temperature -= 1;
-}
-
 Thermostat.prototype.isMinimumTemperature = function() {
   return this.temperature === this.MINIMUM_TEMPERATURE;
 }

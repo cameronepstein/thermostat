@@ -17,11 +17,6 @@ describe ('Thermostat', function() {
     expect(thermostat.getCurrentTemperature()).toEqual(21);
   });
 
-  it('decreases in temperature with the down button', function() {
-    thermostat.decreaseTemperature();
-    expect(thermostat.getCurrentTemperature()).toEqual(19);
-  });
-
   it('has a minimum of 10 degrees', function() {
     for (var i = 0; i < 11; i++) {
       thermostat.down();
